@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+</head>
+<body class="bg-color">
+    <div id="container" class="pos container">
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div id="clock" class="pos">
+            <div id="hr" class="hr-minute bg-color pos">
+            </div>
+            <div id="minute" class="hr-minute bg-color pos">
+            </div>
+            <div class="hr-minute">
+                <div class="pos">
+                    <div id="am-pm" class="am-pm-day bg-color pos">
+                        
+                    </div>
+                    
+                    <div id="day" class="am-pm-day bg-color pos">
+                    </div>
+                </div>
+                <div>
+                    <div id="date" class="date bg-color pos">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="alarms" class="bg-color">
+            <ul id="alarmsList"></ul>
+        </div>
+        <div class="pos">
+            <form id="alarm">
+                <label for="time" class="font">Time</label>
+                <input id="time" class="font" name="time" type="time" value = "09:00"/>
+                <label for="repeated" class="font">Repeat</label>
+                <input type="checkbox" name="repeated" id="repeated" checked>
+                <button class="submit-button" type="submit">Add Alarm</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
